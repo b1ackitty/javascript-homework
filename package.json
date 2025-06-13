@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "dev": "pnpx live-server --host=localhost --port=3000"
+  }
+}
