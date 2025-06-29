@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="멋사 프론트엔드 14기 정지은의 컴포넌트 만들기 과제를 제출합니다." />
+    <link rel="icon" href="./images/game-icon.png" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>JavaScript 3주 차 컴포넌트 만들기 과제</title>
+  </head>
+  <body>
+    <h1 hidden>JavaScript 3주 차 컴포넌트 만들기 과제</h1>
+    <section class="carousel">
+      <h2 class="carousel-title">
+        <a href="#">
+          <span>추천 게임</span
+          ><svg
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="8"
+            height="13"
+            viewBox="0 0 8 13"
+            fill="none">
+            <path
+              d="M0.75621 0.751054C1.09793 0.416315 1.65182 0.416315 1.99354 0.751054L7.24364 5.89397C7.58535 6.22871 7.58535 6.77129 7.24364 7.10603L1.99354 12.2489C1.65182 12.5837 1.09793 12.5837 0.75621 12.2489C0.414495 11.9142 0.414495 11.3716 0.75621 11.0369L5.38765 6.5L0.75621 1.96312C0.414495 1.62838 0.414495 1.08579 0.75621 0.751054Z"
+              fill="#858585" />
+          </svg>
+        </a>
+      </h2>
+
+      <div class="carousel-wrapper">
+        <ul class="carousel-container">
+          <li class="carousel-content is-selected">
+            <a href="#" class="carousel-link">
+              <figure>
+                <div class="carousel-images">
+                  <img
+                    class="carousel-bg"
+                    src="./images/background1.png"
+                    alt=""
+                    srcset="./images/background1@2x.png 2x"
+                    width="160px"
+                    height="160px" />
+                  <img
+                    class="carousel-character"
+                    src="./images/character1.png"
+                    alt=""
+                    srcset="./images/character1@2x.png 2x"
+                    width="160px"
+                    height="166px" />
+                </div>
+                <figcaption>
+                  <strong>크로노 오디세이</strong>
+                  <p>멈춰 있던 시간이 흐른다<span>MMORPG</span></p>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="carousel-content is-selected">
+            <a href="#" class="carousel-link">
+              <figure>
+                <div class="carousel-images">
+                  <img
+                    class="carousel-bg"
+                    src="./images/background2.png"
+                    alt=""
+                    srcset="./images/background2@2x.png 2x"
+                    width="160px"
+                    height="160px" />
+                  <img
+                    class="carousel-character"
+                    src="./images/character2.png"
+                    alt=""
+                    srcset="./images/character2@2x.png 2x"
+                    width="160px"
+                    height="166px" />
+                </div>
+                <figcaption>
+                  <strong>아키에이지 워</strong>
+                  <p>시대의 전설을 향해<span>MMORPG</span></p>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="carousel-content">
+            <a href="#" class="carousel-link">
+              <figure>
+                <div class="carousel-images">
+                  <img
+                    class="carousel-bg"
+                    src="./images/background3.png"
+                    alt=""
+                    srcset="./images/background3@2x.png 2x"
+                    width="160px"
+                    height="160px" />
+                  <img
+                    class="carousel-character"
+                    src="./images/character3.png"
+                    alt=""
+                    srcset="./images/character3@2x.png 2x"
+                    width="160px"
+                    height="166px" />
+                </div>
+                <figcaption>
+                  <strong>패스 오브 엑자일 2</strong>
+                  <p>얼리 액세스 오픈!<span>핵앤슬래시</span></p>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="carousel-content">
+            <a href="#" class="carousel-link">
+              <figure>
+                <div class="carousel-images">
+                  <img
+                    class="carousel-bg"
+                    src="./images/background4.png"
+                    alt=""
+                    srcset="./images/background4@2x.png 2x"
+                    width="160px"
+                    height="160px" />
+                  <img
+                    class="carousel-character"
+                    src="./images/character4.png"
+                    alt=""
+                    srcset="./images/character4@2x.png 2x"
+                    width="160px"
+                    height="166px" />
+                </div>
+                <figcaption>
+                  <strong>오딘 : 발할라 라이징</strong>
+                  <p>신의 영역을 차지하라<span>MMORPG</span></p>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="carousel-content">
+            <a href="#" class="carousel-link">
+              <figure>
+                <div class="carousel-images">
+                  <img
+                    class="carousel-bg"
+                    src="./images/background5.png"
+                    alt=""
+                    srcset="./images/background5@2x.png 2x"
+                    width="160px"
+                    height="160px" />
+                  <img
+                    class="carousel-character"
+                    src="./images/character5.png"
+                    alt=""
+                    srcset="./images/character5@2x.png 2x"
+                    width="160px"
+                    height="166px" />
+                </div>
+                <figcaption>
+                  <strong>롬: 리멤버 오브 마제스티</strong>
+                  <p>세계는 하나의 전장이 된다<span>MMORPG</span></p>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="carousel-content">
+            <a href="#" class="carousel-link">
+              <figure>
+                <div class="carousel-images">
+                  <img
+                    class="carousel-bg"
+                    src="./images/background6.png"
+                    alt=""
+                    srcset="./images/background6@2x.png 2x"
+                    width="160px"
+                    height="160px" />
+                  <img
+                    class="carousel-character"
+                    src="./images/character6.png"
+                    alt=""
+                    srcset="./images/character6@2x.png 2x"
+                    width="160px"
+                    height="166px" />
+                </div>
+                <figcaption>
+                  <strong>배틀그라운드</strong>
+                  <p>최후까지 생존하라!<span>배틀로얄</span></p>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="carousel-indicator">
+        <button type="button" aria-label="이전 탐색">
+          <svg
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="currentColor">
+            <rect
+              x="-0.5"
+              y="0.5"
+              width="39"
+              height="39"
+              rx="19.5"
+              transform="matrix(-1 0 0 1 39.5 0)"
+              stroke="black"
+              stroke-opacity="0.08" />
+            <path
+              d="M24.207 13.293C23.8165 12.9024 23.1835 12.9024 22.793 13.293L16.793 19.293C16.4024 19.6835 16.4024 20.3165 16.793 20.707L22.793 26.707C23.1835 27.0975 23.8165 27.0975 24.207 26.707C24.5976 26.3165 24.5976 25.6835 24.207 25.293L18.9141 20L24.207 14.707C24.5976 14.3165 24.5976 13.6835 24.207 13.293Z"
+              fill="#474747" />
+          </svg>
+        </button>
+        <p><span class="current-page">1</span> / 3</p>
+        <button type="button" aria-label="다음 탐색">
+          <svg
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="currentColor">
+            <rect
+              x="1"
+              y="0.5"
+              width="39"
+              height="39"
+              rx="19.5"
+              stroke="black"
+              stroke-opacity="0.08" />
+            <path
+              d="M16.793 13.293C17.1835 12.9024 17.8165 12.9024 18.207 13.293L24.207 19.293C24.5976 19.6835 24.5976 20.3165 24.207 20.707L18.207 26.707C17.8165 27.0975 17.1835 27.0975 16.793 26.707C16.4024 26.3165 16.4024 25.6835 16.793 25.293L22.0859 20L16.793 14.707C16.4024 14.3165 16.4024 13.6835 16.793 13.293Z"
+              fill="#474747" />
+          </svg>
+        </button>
+      </div>
+    </section>
+    <script src="./scripts/week3-homework.js"></script>
+  </body>
+</html>

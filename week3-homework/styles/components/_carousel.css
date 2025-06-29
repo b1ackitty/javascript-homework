@@ -1,0 +1,153 @@
+.carousel {
+  box-shadow: 0px 0px 4px 0px var(--gray-500);
+  padding: 24px;
+  border-radius: 16px;
+  width: fit-content;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 12px;
+}
+
+.carousel-title {
+  color: var(--gray-800);
+  font-size: 18px;
+  padding: 6px;
+  width: fit-content;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: var(--gray-100);
+  }
+
+  svg {
+    display: inline;
+  }
+
+  a {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 6px;
+
+    &::before {
+      content: "";
+      background: url("./../../images/game-icon.png") 50% / cover no-repeat;
+      width: 24px;
+      height: 24px;
+    }
+
+    &:focus-visible {
+      outline: 1px solid var(--blue-500);
+      outline-offset: 6px;
+      border-radius: 8px;
+    }
+  }
+}
+
+.carousel-wrapper {
+  --content-width: 160px;
+  
+  width: calc(var(--content-width) * 2 + 16px);
+  overflow: hidden;
+}
+
+.carousel-container {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 16px;
+
+  .carousel-content {
+    width: var(--content-width);
+
+    .carousel-link {
+      &:hover,
+      &:focus-visible {
+        .carousel-character {
+          transform: scale(1.02);
+          transform-origin: bottom;
+        }
+      }
+
+      &:focus-visible {
+        outline-color: var(--blue-500);
+        outline-width: 1px;
+        outline-offset: -1px;
+      }
+    }
+
+    .carousel-images {
+      position: relative;
+      padding-block: 3px;
+      width: 160px;
+      height: 172px;
+      border-radius: 8px;
+      overflow: hidden;
+
+      .carousel-bg {
+        border-radius: 8px;
+        position: absolute;
+        top: 9px;
+      }
+
+      .carousel-character {
+        border-radius: 0px 0px 8px 8px;
+        position: absolute;
+        transform-origin: bottom;
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+
+    figcaption {
+      margin-block-start: 3px;
+
+      strong,
+      p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 1rem;
+        margin-block-start: 2px;
+        font-size: 14px;
+      }
+
+      p span {
+        color: var(--gray-500);
+        display: block;
+        margin-block-start: 6px;
+      }
+    }
+  }
+}
+
+.carousel-indicator {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  button {
+    color: var(--white);
+    border: 0;
+    padding: 0;
+    border-radius: 50%;
+
+    &:hover {
+      color: var(--gray-100);
+    }
+
+    &:focus-visible {
+      outline: 1px solid var(--blue-500);
+      outline-offset: -1px;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    color: var(--gray-700);
+
+    .current-page {
+      color: var(--black);
+    }
+  }
+}

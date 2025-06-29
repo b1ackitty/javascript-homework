@@ -1,0 +1,10 @@
+@layer base, theme, components;
+
+@import "/assets/styles/common/_normalize.css" layer(base);
+@import "/assets/styles/common/_base.css" layer(base);
+
+@import "./_theme.css" layer(theme);
+
+@import "./components/_carousel.css" layer(components);
+
+@import "./_demo.css";
