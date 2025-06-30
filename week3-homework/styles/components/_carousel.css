@@ -46,7 +46,7 @@
 
 .carousel-wrapper {
   --content-width: 160px;
-  
+
   width: calc(var(--content-width) * 2 + 16px);
   overflow: hidden;
 }
@@ -59,19 +59,21 @@
   .carousel-content {
     width: var(--content-width);
 
+    &:focus-within {
+      outline: 1px solid var(--blue-500);
+      outline-offset: -1px;
+      border-radius: 4px;
+    }
+
     .carousel-link {
       &:hover,
       &:focus-visible {
+        outline: 0;
+        
         .carousel-character {
           transform: scale(1.02);
           transform-origin: bottom;
         }
-      }
-
-      &:focus-visible {
-        outline-color: var(--blue-500);
-        outline-width: 1px;
-        outline-offset: -1px;
       }
     }
 
@@ -139,6 +141,15 @@
     &:focus-visible {
       outline: 1px solid var(--blue-500);
       outline-offset: -1px;
+    }
+
+    &:disabled {
+      cursor: default;
+      color: var(--gray-100);
+
+      path {
+        fill: var(--gray-500);
+      }
     }
   }
 
