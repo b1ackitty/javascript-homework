@@ -1,0 +1,8 @@
+@layer base, theme;
+
+@import "/assets/styles/common/_normalize.css" layer(base);
+@import "/assets/styles/common/_base.css" layer(base);
+
+@import "./_theme.css" layer(theme);
+
+@import "./_demo.css";

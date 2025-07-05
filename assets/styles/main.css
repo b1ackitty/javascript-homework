@@ -1,0 +1,15 @@
+@layer base;
+
+@import "/assets/styles/common/_normalize.css" layer(base);
+@import "/assets/styles/common/_base.css" layer(base);
+
+body {
+  margin: 40px;
+}
+
+a {
+  width: max-content;
+  display: block;
+  margin-block-start: 10px;
+  text-decoration: none;
+}
